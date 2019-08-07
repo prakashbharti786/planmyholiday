@@ -1,0 +1,159 @@
+<template>
+  <div>
+    <div
+      v-if="enableSlider"
+      v-swiper:mySwiper="swiperOptionBlog"
+      class="swiper-container cp-hero-slider"
+    >
+      <div class="swiper-wrapper">
+        <div
+          v-for="(item, index) in homeSliderList"
+          :key="'partner' + index"
+          class="swiper-slide swiper-slide--rex"
+        >
+          <img
+            :alt="item.alt"
+            :data-src="item.image"
+            style="height: 0;width: 0"
+            class="swiper-lazy"
+          />
+          <div class="md-card__media md-card__media--16-9"></div>
+          <div
+            :style="{
+              backgroundImage: 'url(' + item.image + ')'
+            }"
+            class="swiper-lazy cp-hero-slider__bg"
+          ></div>
+          <div
+            class="cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
+          >
+            <div class="md-d-flex md-flex-column md-typography-text-center">
+              <h2
+                class="md-text-light md-typography-display-1"
+                v-html="item.title"
+              ></h2>
+              <p
+                class="md-text-light md-typography-subhead"
+                v-html="item.caption"
+              ></p>
+            </div>
+          </div>
+          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </div>
+      </div>
+      <div slot="pagination" class="swiper-pagination md-d-none-sm"></div>
+      <div
+        slot="button-next"
+        class="md-d-none swiper-button-next swiper-button-white"
+      ></div>
+      <div
+        slot="button-prev"
+        class="md-d-none swiper-button-prev swiper-button-white"
+      ></div>
+    </div>
+    <div v-if="isFetching || !enableSlider" class="md-shimmer md-layout-rel">
+      <div class="cp-hero-slider-shimmer md-bg-white"></div>
+      <div
+        class="cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
+      >
+        <div
+          class="md-flex-grow-1 md-d-flex md-flex-column md-typography-text-center"
+        >
+          <div
+            style="transition-delay: 250ms; height: 48px"
+            class="md-shimmer__item md-layout-center-block md-mb-2 md-shimmer__item--headline"
+          ></div>
+          <div
+            style="transition-delay: 500ms; height: 24px;"
+            class="md-shimmer__item md-layout-center-block md-shimmer__item--paragraph"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { mapGetters } from 'vuex'
+export default {
+  props: {
+    disableHeading: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data: () => ({
+    assetsUrl: process.env.assetsUrl,
+    swiperOptionBlog: {
+      lazy: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      effect: 'fade',
+      autoplay: true,
+      loop: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      isFetching: true
+    },
+    partnerList: [
+      {
+        alt: 'VITA',
+        image: 'img/VITA_plaque2.png',
+        link: 'https://www.lhw.com'
+      },
+      {
+        alt: 'VITA',
+        image: 'img/private-luxury-circle.png',
+        link: 'http://www.privateluxuryforums.com'
+      },
+      {
+        alt: 'VITA',
+        image: 'img/luxperience.png',
+        link: 'http://www.luxperience.com.au'
+      }
+    ],
+    isFetching: true
+  }),
+  computed: {
+    ...mapGetters({
+      homeSliderList: 'core/getHomeSlider'
+    }),
+    enableSlider() {
+      return this.homeSliderList.length
+    }
+  },
+  mounted() {
+    if (!(this.homeSliderList && this.homeSliderList.length)) {
+      this.fetchHomeSlider()
+    } else {
+      this.isFetching = false
+    }
+  },
+  beforeDestroy() {
+    this.$store.commit('core/setObjData', {
+      name: 'scroll',
+      key: 'startScroll',
+      data: 64
+    })
+    this.$store.commit('core/setObjData', {
+      name: 'scroll',
+      key: 'endScroll',
+      data: 64
+    })
+  },
+  methods: {
+    async fetchHomeSlider() {
+      this.isFetching = true
+      try {
+        await this.$store.dispatch('core/fetchHomeSlider')
+      } catch (e) {
+        // eslint-disable-next-line no-console
+        console.log(e)
+      }
+      this.isFetching = false
+    }
+  }
+}
+</script>
