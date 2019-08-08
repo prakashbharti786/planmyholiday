@@ -1,6 +1,7 @@
 const defaultBlogsState = () => {
   return {
-    data: []
+    data: [],
+    blogs: []
   }
 }
 export default {
@@ -8,8 +9,11 @@ export default {
   state: defaultBlogsState,
 
   mutations: {
-    setData(state, data) {
-      state.data = data
+    setData(state, obj) {
+      state[obj.name] = obj.data
+    },
+    addData(state, obj) {
+      state[obj.name].unshift(obj.data)
     },
     resetState(state) {
       Object.assign(state, defaultBlogsState())
@@ -17,19 +21,24 @@ export default {
   },
 
   actions: {
-    async index({ commit }) {
-      const { data } = await this.$axios.get(`blogs`)
-      commit('setData', data)
+    async show({ commit }, obj) {
+      const { data } = await this.$axios.get(`/blogs/${obj.id}`)
+      // eslint-disable-next-line no-console
+      console.log(data)
+      commit('addData', { name: 'data', data: data })
     },
-    async show({ commit }, id) {
-      const { data } = await this.$axios.get(`/blogs/${id}`)
-      commit('setData', data)
+    async fetchBlogs({ commit }) {
+      const { data } = await this.$axios.get(`blogs`)
+      commit('setData', { name: 'blogs', data: data })
     }
   },
 
   getters: {
     getData(state) {
       return state.data
+    },
+    getBlogs(state) {
+      return state.blogs
     }
   }
 }

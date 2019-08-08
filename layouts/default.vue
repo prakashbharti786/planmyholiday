@@ -303,6 +303,19 @@ process
   background-size: cover;
   z-index: 2;
 }
+.cp-click-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.pm-blog p {
+  font-size: inherit;
+}
+.pm-blog p img {
+  width: 100%;
+}
 .cp-hero-slider__bg::before {
   position: absolute;
   content: '';

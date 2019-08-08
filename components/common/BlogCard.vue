@@ -18,6 +18,10 @@
           :style="{ backgroundImage: 'url(' + blog.image + ')' }"
           class="img-box"
         ></div>
+        <router-link
+          :to="'blogs' + '/' + blog.nid + '/' + blog.alias.substring(5)"
+          class="cp-click-area"
+        ></router-link>
       </div>
       <div class="md-card__header md-align-items-center">
         <div class="md-avatar">P</div>

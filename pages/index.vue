@@ -147,7 +147,7 @@ export default {
       }
     }
     try {
-      await store.dispatch('blogs/index')
+      await store.dispatch('blogs/fetchBlogs')
     } catch (e) {
       return error({ statusCode: 404, message: 'Not found' })
     }
