@@ -12,6 +12,9 @@ export default {
     setData(state, obj) {
       state[obj.name] = obj.data
     },
+    addData(state, obj) {
+      state[obj.name].unshift(obj.data)
+    },
     resetState(state) {
       Object.assign(state, defaultTestimonialsState())
     }
@@ -20,7 +23,7 @@ export default {
   actions: {
     async show({ commit }, obj) {
       const { data } = await this.$axios.get(`/testimonials/${obj.id}`)
-      commit('setData', data)
+      commit('addData', { name: 'data', data: data })
     },
     async fetchTestimonials({ commit }) {
       const { data } = await this.$axios.get(`testimonials`)

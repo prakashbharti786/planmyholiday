@@ -131,7 +131,7 @@ export default {
         auth: 'common'
       },
       {
-        link: '/blog',
+        link: '/blogs',
         title: 'Blog',
         type: 'nuxtLink',
         auth: 'common'

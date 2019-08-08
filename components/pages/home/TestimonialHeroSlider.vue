@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section class="rx-section md-py-0">
     <div
       v-if="enableSlider"
       v-swiper:mySwiper="swiperOptionBlog"
@@ -14,10 +14,8 @@
           <img
             :alt="item.alt"
             :data-src="item.image"
-            style="height: 0;width: 0"
-            class="swiper-lazy"
+            class="swiper-lazy cp-hero-slider__img"
           />
-          <div class="md-card__media md-card__media--16-9"></div>
           <div
             :style="{
               backgroundImage: 'url(' + item.image + ')'
@@ -25,7 +23,7 @@
             class="swiper-lazy cp-hero-slider__bg"
           ></div>
           <div
-            class="cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
+            class="swiper-lazy cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
           >
             <div class="md-d-flex md-flex-column md-typography-text-center">
               <h2
@@ -70,7 +68,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -148,6 +146,16 @@ export default {
       this.isFetching = true
       try {
         await this.$store.dispatch('core/fetchHomeSlider')
+        this.$store.commit('core/setObjData', {
+          name: 'scroll',
+          key: 'startScroll',
+          data: 480
+        })
+        this.$store.commit('core/setObjData', {
+          name: 'scroll',
+          key: 'endScroll',
+          data: 480
+        })
       } catch (e) {
         // eslint-disable-next-line no-console
         console.log(e)
