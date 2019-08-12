@@ -9,10 +9,10 @@
         />
       </div>
     </div>
-    <h1 class="md-mt-2 md-mb-1 md-typography-display-1 md-typography-font-bold">
+    <h1 class="md-mt-2 md-mb-1 md-typography-headline4 md-typography-font-bold">
       Sign in
     </h1>
-    <p class="md-mb-3-sm md-mb-2 md-typography-subhead">
+    <p class="md-mb-3-sm md-mb-2 md-typography-subtitle1">
       to continue to <a href="">Fitmetix</a>
     </p>
     <div class="md-d-flex md-mb-2 md-align-items-center">

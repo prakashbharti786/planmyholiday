@@ -8,24 +8,31 @@
           <div
             class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
           >
-            <div class="md-mt-1 pm-work-font md-text-accent nt-tag-line">
+            <div
+              class="md-mt-1 pm-work-font md-text-accent nt-tag-line cp-animate cp-animate--fade"
+            >
               WHO WE ARE?
             </div>
             <h2
-              class="md-mb-2 pm-work-font md-typography-display-2 md-typography-font-light"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
             >
-              About us
+              <span class="cp-animate cp-animate--slide md-d-inline-block">
+                About us
+              </span>
             </h2>
-            <p class="pm-work-font md-typography-subhead">
-              Plan My Holiday is a leisure travel company that specializes in
-              luxury tailor-made holidays.<br />
-              For us, your no request is too great and no detail is too
-              small.<br />
-              We aim to offer you nothing but the best holiday experience ever.
+            <p class="pm-work-font md-typography-subtitle1 md-oh">
+              <span class="cp-animate cp-animate--slide md-d-inline-block">
+                Plan My Holiday is a leisure travel company that specializes in
+                luxury tailor-made holidays.<br />
+                For us, your no request is too great and no detail is too
+                small.<br />
+                We aim to offer you nothing but the best holiday experience
+                ever.
+              </span>
             </p>
           </div>
         </div>
-        <div class="md-row">
+        <div class="md-row cp-animate cp-animate--fade">
           <div class="md-col md-col--12 md-col--6-md">
             <div
               class="cp-img-background"
@@ -35,8 +42,8 @@
           <div class="md-col md-col--12 md-col--6-md">
             <div class="content md-mt-2 md-mt-0-md">
               <div class="md-typography-text-justify">
-                <p class="md-typography-subhead">Dear Traveller,</p>
-                <p class="md-typography-subhead">
+                <p class="md-typography-subtitle1">Dear Traveller,</p>
+                <p class="md-typography-subtitle1">
                   Welcome. Plan My Holiday offers you bespoke vacations to the
                   world’s most exclusive hotels and exotic destinations. For us,
                   travel is a never ending learning experience. We are
@@ -47,14 +54,14 @@
                   offer you nothing but the globe's finest hotels, luxury villas
                   and cruises for that unforgettable journey.
                 </p>
-                <p class="md-typography-subhead">
+                <p class="md-typography-subtitle1">
                   We strive to be a unique “Globally Local” company by offering
                   you an unparalleled combination of a Global Portfolio with
                   rich and unique local expertise. We aim to satisfy you with
                   the highest level of consultation services and would
                   definitely go an extra mile to satisfy all the travel needs.
                 </p>
-                <p class="md-typography-subhead">
+                <p class="md-typography-subtitle1">
                   So, whether you require to book a hotel or plan a trip, we
                   will work closely with you to provide a service that’s
                   unmatched.
@@ -124,7 +131,7 @@
                 style="max-width: 200px;margin-left: auto;margin-right: auto"
               ></div>
             </div>
-            <p class="md-mt-3 pm-work-font md-typography-subhead">
+            <p class="md-mt-3 pm-work-font md-typography-subtitle1">
               Not only do we offer our client Best price guarantee, we also
               offer complete transparency in our pricing. Most of the travel
               companies today offer one price for your entire tour. We don't
@@ -145,7 +152,7 @@
                 style="max-width: 200px;margin-left: auto;margin-right: auto"
               ></div>
             </div>
-            <p class="md-mt-3 pm-work-font md-typography-subhead md-mb-0">
+            <p class="md-mt-3 pm-work-font md-typography-subtitle1 md-mb-0">
               We always have some offers that you cannot refuse. Check them out
               <a href="explore?what=13">here</a>
             </p>

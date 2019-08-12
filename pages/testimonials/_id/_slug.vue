@@ -8,12 +8,12 @@
             class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
           >
             <h3
-              class="appearContainer font-satisfy md-typography-text-center md-mb-2 md-mt-1 md-mt-0-md md-typography-headline"
+              class="appearContainer font-satisfy md-typography-text-center md-mb-2 md-mt-1 md-mt-0-md md-typography-headline5"
             >
               {{ getCountryNameByCode(testimonial['country']) }}
             </h3>
             <h2
-              class="md-mb-2 pm-work-font md-typography-display-2 md-typography-font-light"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light"
             >
               {{ testimonial.node_title }}
             </h2>
@@ -21,7 +21,7 @@
         </div>
         <div class="md-row">
           <div class="md-mb-4 md-col md-col--12 md-typography-text-center">
-            <div class="md-typography-text-justify md-typography-subhead">
+            <div class="md-typography-text-justify md-typography-subtitle1">
               <i class="material-icons cp-testimonial-slider__icon"
                 >format_quote</i
               >
@@ -39,7 +39,7 @@
     </div>
     <div class="rx-section">
       <div class="md-container md-container--box">
-        <h3 class="md-typography-text-center md-typography-headline">
+        <h3 class="md-typography-text-center md-typography-headline5">
           Other testimonials
         </h3>
         <Testimonial />

@@ -1,9 +1,9 @@
 <template>
   <div class="cp-width-100 md-bg-white">
-    <div v-if="enableWhyUs && !isFetching">
+    <div v-if="enableList && !isFetching">
       <div v-swiper:mySwiper="swiperOption" class="swiper-container">
         <div class="swiper-wrapper">
-          <template v-for="(item, index) in whyUsItems">
+          <template v-for="(item, index) in itemList">
             <WhyUsCard
               :key="'slides-' + index"
               :why-us="item"
@@ -14,7 +14,7 @@
         <div class="swiper-pagination" slot="pagination"></div>
       </div>
     </div>
-    <div v-if="isFetching || !enableWhyUs" class="md-shimmer">
+    <div v-if="isFetching || !enableList" class="md-shimmer">
       <div class="md-row md-align-items-center-md">
         <div class="md-mb-2 md-col md-col--12 md-col--6-md">
           <div
@@ -69,14 +69,14 @@ export default {
   }),
   computed: {
     ...mapGetters({
-      whyUsItems: 'core/getWhyUs'
+      itemList: 'core/getWhyUs'
     }),
-    enableWhyUs() {
-      return this.whyUsItems.length
+    enableList() {
+      return this.itemList.length
     }
   },
   mounted() {
-    if (!(this.whyUsItems && this.whyUsItems.length)) {
+    if (!(this.itemList && this.itemList.length)) {
       this.fetchWhyUs()
     } else {
       this.isFetching = false

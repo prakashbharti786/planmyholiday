@@ -8,17 +8,17 @@
       <div class="swiper-wrapper">
         <div
           v-for="(item, index) in itemList"
-          :key="'partner' + index"
+          :key="'blog-image' + index"
           class="swiper-slide swiper-slide--rex"
         >
           <img
             :alt="item.alt"
-            :data-src="item.image"
+            :data-src="item.url"
             class="swiper-lazy cp-hero-slider__img"
           />
           <div
             :style="{
-              backgroundImage: 'url(' + item.image + ')'
+              backgroundImage: 'url(' + item.url + ')'
             }"
             class="swiper-lazy cp-hero-slider__bg"
           ></div>
@@ -26,22 +26,10 @@
             class="swiper-lazy cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
           >
             <div class="md-d-flex md-flex-column md-typography-text-center">
-              <h2
-                class="md-text-light md-typography-headline3-md md-typography-headline4 md-oh"
-              >
-                <span
-                  class="cp-animate cp-animate--slide md-d-inline-block"
-                  v-html="item.title"
-                ></span>
-              </h2>
               <p
-                class="md-text-light md-typography-headline5-md md-typography-subtitle1 md-oh"
-              >
-                <span
-                  class="cp-animate cp-animate--slide md-d-inline-block"
-                  v-html="item.caption"
-                ></span>
-              </p>
+                class="md-text-light md-typography-subtitle1"
+                v-html="item.caption"
+              ></p>
             </div>
           </div>
           <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
@@ -80,12 +68,20 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 export default {
+  name: 'BlogHeroSlider',
   props: {
     disableHeading: {
       type: Boolean,
       default: false
+    },
+    isFetching: {
+      type: Boolean,
+      default: true
+    },
+    blog: {
+      type: Object,
+      required: true
     }
   },
   data: () => ({
@@ -102,40 +98,27 @@ export default {
         clickable: true
       },
       isFetching: true
-    },
-    partnerList: [
-      {
-        alt: 'VITA',
-        image: 'img/VITA_plaque2.png',
-        link: 'https://www.lhw.com'
-      },
-      {
-        alt: 'VITA',
-        image: 'img/private-luxury-circle.png',
-        link: 'http://www.privateluxuryforums.com'
-      },
-      {
-        alt: 'VITA',
-        image: 'img/luxperience.png',
-        link: 'http://www.luxperience.com.au'
-      }
-    ],
-    isFetching: true
+    }
   }),
   computed: {
-    ...mapGetters({
-      itemList: 'core/getHomeSlider'
-    }),
+    itemList() {
+      return this.blog && this.blog.images ? this.blog.images : []
+    },
     enableList() {
       return this.itemList.length
     }
   },
   mounted() {
-    if (!(this.itemList && this.itemList.length)) {
-      this.fetchHomeSlider()
-    } else {
-      this.isFetching = false
-    }
+    this.$store.commit('core/setObjData', {
+      name: 'scroll',
+      key: 'startScroll',
+      data: 480
+    })
+    this.$store.commit('core/setObjData', {
+      name: 'scroll',
+      key: 'endScroll',
+      data: 480
+    })
   },
   beforeDestroy() {
     this.$store.commit('core/setObjData', {
@@ -148,28 +131,6 @@ export default {
       key: 'endScroll',
       data: 64
     })
-  },
-  methods: {
-    async fetchHomeSlider() {
-      this.isFetching = true
-      try {
-        await this.$store.dispatch('core/fetchHomeSlider')
-        this.$store.commit('core/setObjData', {
-          name: 'scroll',
-          key: 'startScroll',
-          data: 480
-        })
-        this.$store.commit('core/setObjData', {
-          name: 'scroll',
-          key: 'endScroll',
-          data: 480
-        })
-      } catch (e) {
-        // eslint-disable-next-line no-console
-        console.log(e)
-      }
-      this.isFetching = false
-    }
   }
 }
 </script>

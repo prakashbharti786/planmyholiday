@@ -1,6 +1,6 @@
 <template>
   <div class="et-login-wrapper">
-    <h1 class="md-mt-2 md-mb-1 md-typography-display-1 md-typography-font-bold">
+    <h1 class="md-mt-2 md-mb-1 md-typography-headline4 md-typography-font-bold">
       Forget Password
     </h1>
     <p class="md-mb-2">

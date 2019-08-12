@@ -4,7 +4,7 @@
       v-for="item in blogs"
       :key="item.nid"
       :blog="item"
-      class="md-col md-col--4"
+      :class="blogClass"
     />
   </div>
 </template>
@@ -19,6 +19,10 @@ export default {
       default: function() {
         return []
       }
+    },
+    blogClass: {
+      type: String,
+      default: null
     }
   }
 }

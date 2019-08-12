@@ -118,6 +118,7 @@ module.exports = {
   env: {
     baseUrl: process.env.BASE_URL,
     assetsUrl: process.env.ASSETS_URL,
+    adminUrl: process.env.ADMIN_URL,
     apiUrl: process.env.API_URL,
     domain: process.env.DOMAIN,
     assistantUrl: process.env.ASSISTANT_URL,
@@ -173,5 +174,9 @@ module.exports = {
   },
 
   /* CSS file in the project */
-  css: ['@/assets/material.css', '@/assets/main.css']
+  css: ['@/assets/material.css', '@/assets/main.css', '@/assets/animation.css'],
+
+  router: {
+    middleware: ['visits']
+  }
 }

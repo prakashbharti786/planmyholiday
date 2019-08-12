@@ -7,7 +7,7 @@
         <div class="md-row">
           <div class="md-col">
             <div class="md-panel__body--terms">
-              <p class="md-typography-font-light md-typography-subhead">
+              <p class="md-typography-font-light md-typography-subtitle1">
                 Please read the following terms and conditions carefully before
                 registering, accessing, browsing, downloading or using the Site
                 (defined below). By accessing or using the Site or by using the
@@ -18,7 +18,7 @@
                 by these terms and conditions, you may not access or use the
                 site and immediately terminate your use of the services.
               </p>
-              <p class="md-typography-font-light md-typography-subhead">
+              <p class="md-typography-font-light md-typography-subtitle1">
                 The Terms and Conditions (as may be amended from time to time,
                 the “Agreement”) is a legal contract between you being, an
                 individual customer, user, or beneficiary of this service of at
@@ -33,7 +33,7 @@
                 individually or collectively are referred as Service or Services
                 as they case may be).
               </p>
-              <p class="md-typography-font-light md-typography-subhead">
+              <p class="md-typography-font-light md-typography-subtitle1">
                 Service can be used by you subject to your adherence with the
                 terms and conditions set forth below including relevant
                 policies. Planmyholiday reserves the right, at its sole
@@ -42,10 +42,10 @@
                 re-visit the “Terms & Conditions” link from time to time to stay
                 abreast of any changes that the “Site” may introduce.
               </p>
-              <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+              <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                 Eligibility
               </h1>
-              <p class="md-typography-font-light md-typography-subhead">
+              <p class="md-typography-font-light md-typography-subtitle1">
                 The services are not available to persons under the age of 18 or
                 to anyone previously suspended or removed from the services by
                 Planmyholiday. By accepting these Terms & Conditions or by
@@ -58,17 +58,17 @@
                 person or entity, or falsely state or otherwise misrepresent
                 identity, age or affiliation with any person or entity.
               </p>
-              <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+              <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                 Coupon redemption
               </h1>
-              <p class="md-typography-font-light md-typography-subhead">
+              <p class="md-typography-font-light md-typography-subtitle1">
                 Coupon redemption is purely subjected to standard and specified
                 terms and conditions mentioned by Planmyholiday.
               </p>
-              <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+              <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                 Use of Site+
               </h1>
-              <p class="md-typography-font-light md-typography-subhead">
+              <p class="md-typography-font-light md-typography-subtitle1">
                 You understand that except for information, products or services
                 clearly indicated as being supplied by the Easy IT Returns, we
                 do not operate, control, or endorse any information, products or
@@ -80,10 +80,10 @@
                 particular requirements and for accuracy of data input and
                 output..
               </p>
-              <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+              <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                 Termination or agreement violations
               </h1>
-              <p class="md-typography-font-light md-typography-subhead">
+              <p class="md-typography-font-light md-typography-subtitle1">
                 You agree that Planmyholiday, in its sole discretion, for any or
                 no reason, and without penalty, may suspend or terminate your
                 account (or any part thereof) or your use of the Services and
@@ -102,10 +102,10 @@
                 termination for any reason, you agree to immediately stop using
                 the Services.
               </p>
-              <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+              <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                 Limitation of Liability and Damages
               </h1>
-              <p class="md-typography-font-light md-typography-subhead">
+              <p class="md-typography-font-light md-typography-subtitle1">
                 In no event will Planmyholiday or its contractors, agents,
                 licensors, partners, suppliers be liable to you for any special,
                 indirect, incidental, consequential, punitive, reliance, or
@@ -147,10 +147,10 @@
                 to the fullest extent permitted by applicable law. This
                 paragraph shall survive termination of this Agreement.
               </p>
-              <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+              <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                 Modification of this Agreement
               </h1>
-              <p class="md-typography-font-light md-typography-subhead">
+              <p class="md-typography-font-light md-typography-subtitle1">
                 Planmyholiday reserves the right to change, modify, add, or
                 remove portions of this Agreement (each, a “change”) at any time
                 by posting notification to the Site or otherwise communicating

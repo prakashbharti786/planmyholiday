@@ -2,12 +2,22 @@
   <header
     id="cp-navbar"
     role="banner"
-    class="md-top-app-bar md-top-app-bar--transparent md-top-app-bar--fixed"
+    :class="{ 'cp-show-back': showBack }"
+    class="md-top-app-bar md-top-app-bar--transparent md-top-app-bar--fixed cp-show"
   >
     <div class="header-background"></div>
     <div class="md-container md-container--gutter-24-md md-container--gutter">
+      <div class="cp-show__icon">
+        <MdIconButton
+          class="md-top-app-bar__navigation-icon"
+          icon="arrow_back"
+          @click="goBack"
+        />
+      </div>
       <div class="md-top-app-bar__row">
-        <div class="md-top-app-bar__section md-justify-content-start">
+        <div
+          class="md-top-app-bar__section cp-top-app-bar__section--start md-justify-content-start"
+        >
           <MdIconButton
             class="md-top-app-bar__navigation-icon md-d-none-sm"
             icon="menu"
@@ -63,6 +73,26 @@
 body.has-fixed-header {
   /*  padding-top: 128px;*/
 }
+.cp-show .cp-top-app-bar__section--start {
+  transition: transform 0.3s ease;
+}
+.cp-show .cp-show__icon {
+  position: absolute;
+  left: 24px;
+  top: 8px;
+  z-index: 2;
+  opacity: 0;
+  height: 48px;
+  width: 48px;
+}
+@media (min-width: 600px) {
+  .cp-show-back .cp-top-app-bar__section--start {
+    transform: translateX(40px);
+  }
+  .cp-show-back .cp-show__icon {
+    opacity: 1;
+  }
+}
 .md-top-app-bar.transition-on .header-background {
   transition: transform 400ms ease-in-out;
 }
@@ -101,6 +131,12 @@ body.has-fixed-header {
 }
 .header-light.md-top-app-bar:not(.header-top) .md-button--outlined {
   --button-color: var(--color-app-text);
+}
+.cp-top-app-bar--no-animating {
+  background: #ffffff;
+}
+.cp-top-app-bar--no-animating .header-background {
+  display: none;
 }
 </style>
 <script>
@@ -157,7 +193,8 @@ export default {
     ...mapGetters({
       isAuthenticated: 'auth/isAuthenticated',
       topAppBarTitle: 'core/getTopAppBarTitle',
-      scroll: 'core/getScroll'
+      scroll: 'core/getScroll',
+      history: 'core/getHistory'
     }),
     getQueryString() {
       return this.$route.fullPath.substring(this.$route.path.length)
@@ -167,9 +204,13 @@ export default {
     },
     endScroll() {
       return this.scroll.endScroll
+    },
+    showBack() {
+      return this.$route.path !== '/'
     }
   },
   mounted() {
+    // eslint-disable-next-line no-console
     this.$nextTick(() => {
       window.addEventListener('scroll', this.handleScroll)
       this.prominentElement = this.$el
@@ -203,6 +244,21 @@ export default {
       const currentScrollTop = window.scrollY
       if (currentScrollTop <= this.endScroll) {
         this.prominentElement.classList.remove('header-top')
+      }
+    },
+    goBack() {
+      this.$store.commit('core/setData', {
+        name: 'backButtonClicked',
+        data: true
+      })
+      const history = this.$store.state.core.history
+      if (history.length > 1) {
+        const lastHistoryToPush = history[history.length - 2]
+        this.$store.commit('core/popData', 'history')
+        this.$router.push(lastHistoryToPush)
+      } else {
+        // push to home
+        this.$router.push('/')
       }
     }
   }

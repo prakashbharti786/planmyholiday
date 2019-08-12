@@ -15,7 +15,7 @@
     <div class="md-col md-col--12 md-col--6-md">
       <div class="md-flex-column md-justify-content-center">
         <h3
-          class="appearContainer md-typography-text-justify md-mb-2 md-mt-1 md-mt-0-md md-typography-headline"
+          class="appearContainer md-typography-text-justify md-mb-2 md-mt-1 md-mt-0-md md-typography-headline5"
         >
           {{ whyUs.title }}
         </h3>

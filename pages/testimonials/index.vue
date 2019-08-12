@@ -13,11 +13,11 @@
               Thoughts &amp; Ideas
             </div>
             <h2
-              class="md-mb-2 pm-work-font md-typography-display-2 md-typography-font-light"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light"
             >
-              Our Blog
+              What others say
             </h2>
-            <p class="pm-work-font md-typography-subhead">
+            <p class="pm-work-font md-typography-subtitle1">
               Find inspiration for your next trip and get advice from travelers
               who have been there before.
             </p>

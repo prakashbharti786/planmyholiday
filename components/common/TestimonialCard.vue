@@ -33,12 +33,12 @@
     <div class="md-col md-col--12 md-col--6-md">
       <div class="md-flex-column md-justify-content-center">
         <h3
-          class="appearContainer md-typography-text-justify md-mb-2 md-mt-1 md-mt-0-md md-typography-headline"
+          class="appearContainer md-typography-text-justify md-mb-2 md-mt-1 md-mt-0-md md-typography-headline5"
         >
           {{ testimonial.title }}
         </h3>
         <h3
-          class="appearContainer font-satisfy md-typography-text-center md-mb-2 md-mt-1 md-mt-0-md md-typography-headline"
+          class="appearContainer font-satisfy md-typography-text-center md-mb-2 md-mt-1 md-mt-0-md md-typography-headline5"
         >
           {{ getCountryNameByCode(testimonial['country']) }}
         </h3>

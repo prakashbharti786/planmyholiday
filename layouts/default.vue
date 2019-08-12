@@ -313,8 +313,17 @@ process
 .pm-blog p {
   font-size: inherit;
 }
+.cp-ml-1 {
+  margin-left: 4px;
+}
 .pm-blog p img {
   width: 100%;
+}
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
 }
 .cp-hero-slider__bg::before {
   position: absolute;
@@ -335,7 +344,6 @@ import { mapGetters } from 'vuex'
 import AppHeader from '@/components/layout/AppHeader'
 import AppFooter from '@/components/layout/AppFooter'
 import AppDrawer from '@/components/layout/AppDrawer'
-// import AppBreadcrumb from '../components/ui/AppBreadcrumb'
 
 export default {
   components: {

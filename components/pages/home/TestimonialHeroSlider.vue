@@ -1,13 +1,13 @@
 <template>
   <section class="rx-section md-py-0">
     <div
-      v-if="enableSlider"
+      v-if="enableList"
       v-swiper:mySwiper="swiperOptionBlog"
       class="swiper-container cp-hero-slider"
     >
       <div class="swiper-wrapper">
         <div
-          v-for="(item, index) in homeSliderList"
+          v-for="(item, index) in itemList"
           :key="'partner' + index"
           class="swiper-slide swiper-slide--rex"
         >
@@ -27,11 +27,11 @@
           >
             <div class="md-d-flex md-flex-column md-typography-text-center">
               <h2
-                class="md-text-light md-typography-display-1"
+                class="md-text-light md-typography-headline4"
                 v-html="item.title"
               ></h2>
               <p
-                class="md-text-light md-typography-subhead"
+                class="md-text-light md-typography-subtitle1"
                 v-html="item.caption"
               ></p>
             </div>
@@ -49,7 +49,7 @@
         class="md-d-none swiper-button-prev swiper-button-white"
       ></div>
     </div>
-    <div v-if="isFetching || !enableSlider" class="md-shimmer md-layout-rel">
+    <div v-if="isFetching || !enableList" class="md-shimmer md-layout-rel">
       <div class="cp-hero-slider-shimmer md-bg-white"></div>
       <div
         class="cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
@@ -116,14 +116,14 @@ export default {
   }),
   computed: {
     ...mapGetters({
-      homeSliderList: 'core/getHomeSlider'
+      itemList: 'core/getHomeSlider'
     }),
-    enableSlider() {
-      return this.homeSliderList.length
+    enableList() {
+      return this.itemList.length
     }
   },
   mounted() {
-    if (!(this.homeSliderList && this.homeSliderList.length)) {
+    if (!(this.itemList && this.itemList.length)) {
       this.fetchHomeSlider()
     } else {
       this.isFetching = false

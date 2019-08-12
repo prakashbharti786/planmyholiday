@@ -26,7 +26,9 @@ const defaultCoreState = () => {
     continentList: [],
     currencyList: [],
     countryList: [],
-    themeList: []
+    themeList: [],
+    history: [],
+    backButtonClicked: false
   }
 }
 
@@ -38,6 +40,12 @@ export default {
   mutations: {
     setData(state, obj) {
       state[obj.name] = obj.data
+    },
+    addData(state, obj) {
+      state[obj.name].push(obj.data)
+    },
+    popData(state, name) {
+      state[name].pop()
     },
     setObjData(state, obj) {
       Vue.set(state[obj.name], obj.key, obj.data)
@@ -120,6 +128,9 @@ export default {
     },
     getThemeList(state) {
       return state.themeList
+    },
+    getHistory(state) {
+      return state.history
     }
   }
 }

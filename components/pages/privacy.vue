@@ -16,14 +16,18 @@
               style="padding-right: 32px"
             >
               <h1
-                class="md-mb-2 md-typography-display-2 md-typography-font-light nt-animate nt-animate--delay-1 slideFadeIn"
+                class="md-mb-2 md-typography-headline3-md md-typography-headline4 md-typography-font-light nt-animate nt-animate--delay-1 slideFadeIn"
               >
                 {{ title }}
               </h1>
-              <p class="md-mb-3 md-typography-font-light md-typography-subhead">
+              <p
+                class="md-mb-3 md-typography-font-light md-typography-subtitle1"
+              >
                 {{ subTitle }}
               </p>
-              <p class="md-mb-3 md-typography-font-light md-typography-subhead">
+              <p
+                class="md-mb-3 md-typography-font-light md-typography-subtitle1"
+              >
                 Formerly, Tax Returns were filed using the paper format which
                 besides being limiting is also not convenient in Today's busy
                 world
@@ -45,7 +49,7 @@
               <div
                 class="md-container--box md-my-3 md-container--gutter md-container--gutter-24-md md-container md-panel__body--terms layout-m-b-1 layout-m-t-1"
               >
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   At Planmyholiday, we value your trust & respect your privacy.
                   This Privacy Policy provides you with details about the manner
                   in which your data is collected, stored & used by us. You are
@@ -64,20 +68,20 @@
                     </div>
                   </div>
                 </div>
-                <h1 class="md-mb-2 md-mt-3 md-typography-display-1">
+                <h1 class="md-mb-2 md-mt-3 md-typography-headline4">
                   General
                 </h1>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   We will not sell, share or rent your personal information to
                   any 3rd party or use your email address/mobile number for
                   unsolicited emails and/or SMS. Any emails and/or SMS sent by
                   Planmyholiday will only be in connection with the provision of
                   agreed services & products and this Privacy Policy.
                 </p>
-                <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+                <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                   Personal Information
                 </h1>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   Personal Information means and includes all information that
                   can be linked to a specific individual or to identify any
                   individual, such as name, address, mailing address, birth
@@ -96,10 +100,10 @@
                   computer or Internet service provider [ISP] you are using, and
                   anonymous site statistical data.
                 </p>
-                <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+                <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                   Use of Personal Information
                 </h1>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   We use personal information to provide you with services &
                   products you explicitly requested for, to resolve disputes,
                   troubleshoot concerns, help promote safe services, collect
@@ -114,19 +118,19 @@
                   demographic information (like zip code, age, gender, etc.). We
                   use this data to customize your experience at Planmyholiday
                 </p>
-                <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+                <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                   Links to Other Sites
                 </h1>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   Our site links to other websites that may collect personally
                   identifiable information about you. Planmyholiday is not
                   responsible for the privacy practices or the content of those
                   linked websites.
                 </p>
-                <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+                <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                   Security
                 </h1>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   Planmyholiday has stringent security measures in place to
                   protect the loss, misuse, and alteration of the information
                   under our control. Whenever you change or access your account
@@ -141,15 +145,15 @@
                   may happen your data may fall under suspicious attracts as we
                   host these services from shared services.
                 </p>
-                <h1 class="md-mb-2 md-mt-3 md-typography-display-1">
+                <h1 class="md-mb-2 md-mt-3 md-typography-headline4">
                   Grievance
                 </h1>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   Planmyholiday strongly believes in a sincere and transparent
                   approach to its users. You trust and love us and we would
                   never put growth before trust.
                 </p>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   This policy document aims at minimizing instances of customer
                   complaints, grievances and disappointments via channelized
                   approach, review and redressal. The self-review will be of
@@ -157,7 +161,7 @@
                   you’re disappointed, then at some point in time we’ve not done
                   a great enough job.
                 </p>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   Planmyholiday policy on grievance redressal follows the under
                   noted principles.
                 </p>
@@ -184,7 +188,7 @@
                     without prejudice to the interests of the users.
                   </li>
                 </ul>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   We understand that customer grievances can happen due to
                   multiple reasons. It can be because of the gap between the
                   promised service levels and the service levels actually
@@ -193,7 +197,7 @@
                   gets done. It can also happen due to the actual errors across
                   the system.
                 </p>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   Users have complete authority to file a complaint/ share
                   feedback if they are disappointed by services rendered by Easy
                   It Returns. They can give their complaint/ feedback in
@@ -203,16 +207,16 @@
                   can approach our tiered redressal system with their complaint
                   or other legal avenues available for grievance redressal.
                 </p>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   In order to make Planmyholiday redressal channels more
                   meaningful and effective, a structured system has been put in
                   place. This system will ensure that the complaints are
                   redressed seamlessly and well within the stipulated timeframe.
                 </p>
-                <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+                <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                   Awareness of Grievance Redressal System
                 </h1>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   At Planmyholiday, the users’ experience is what we deliberate
                   and focus on. This is why we listen and take the time to know
                   our users and take their concerns seriously. Going skin-deep
@@ -224,10 +228,10 @@
                   complaints we do everything we can to fix it and make it
                   right.
                 </p>
-                <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+                <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                   Sensitizing staff on handling complaints
                 </h1>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   Our staff undergoes regular training to ensure that consumers
                   queries and grievances are handled properly. They are
                   encouraged to work in a manner which helps us in building the
@@ -238,10 +242,10 @@
                   helps in improving the overall quality of the service levels
                   gradually.
                 </p>
-                <h1 class="md-mb-2 md-mt-3 md-typography-headline">
+                <h1 class="md-mb-2 md-mt-3 md-typography-headline5">
                   How to reach Planmyholiday
                 </h1>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   Our staff undergoes regular training to ensure that consumers
                   queries and grievances are handled properly. They are
                   encouraged to work in a manner which helps us in building the
@@ -252,7 +256,7 @@
                   helps in improving the overall quality of the service levels
                   gradually.
                 </p>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   <span class="md-typography-font-bold">Level 1: </span>
                   You can write to us at
                   <a href="mailto:support@easyitreturns.com">
@@ -262,7 +266,7 @@
                   <nuxt-link to="/contact">contact us</nuxt-link> to submit your
                   query along with the Reference ID
                 </p>
-                <p class="md-typography-font-light md-typography-subhead">
+                <p class="md-typography-font-light md-typography-subtitle1">
                   <span class="md-typography-font-bold">Level 2: </span>
                   If the resolution you received does not meet your
                   expectations, please write to us at

@@ -7,24 +7,30 @@
         <div
           class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
         >
-          <div class="md-mt-1 pm-work-font md-text-accent nt-tag-line">
+          <div
+            class="md-mt-1 pm-work-font md-text-accent cp-animate cp-animate--fade nt-tag-line"
+          >
             Get in touch
           </div>
           <h2
-            class="md-mb-2 pm-work-font md-typography-display-2 md-typography-font-light"
+            class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
           >
-            Contact us
+            <span class="cp-animate cp-animate--slide md-d-inline-block">
+              Contact us
+            </span>
           </h2>
-          <p class="pm-work-font md-typography-subhead">
-            Have a question? Fell free to contact us. Our team will be happy to
-            help you
+          <p class="pm-work-font md-typography-subtitle1 md-oh">
+            <span class="cp-animate cp-animate--slide md-d-inline-block">
+              Have a question? Fell free to contact us. Our team will be happy
+              to help you
+            </span>
           </p>
         </div>
       </div>
-      <div class="md-row">
+      <div class="md-row cp-animate cp-animate--fade">
         <div class="md-col md-col--4-md">
           <div class="">
-            <h3 class="md-mb-3 md-typography-headline">
+            <h3 class="md-mb-3 md-typography-headline5">
               Contact Information
             </h3>
             <ul class="md-footer__link-list">
@@ -62,7 +68,7 @@
               </li>
             </ul>
             <div class="md-border md-mt-4"></div>
-            <h3 class="md-mb-3 md-mt-3 md-typography-headline">
+            <h3 class="md-mb-3 md-mt-3 md-typography-headline5">
               Need Help?
             </h3>
             <ul class="md-footer__link-list">
@@ -85,7 +91,7 @@
         </div>
         <div class="md-col md-col--6-md md-col--offset-1-md">
           <div class="">
-            <h3 class="md-mb-1 md-typography-headline">Drop us message</h3>
+            <h3 class="md-mb-1 md-typography-headline5">Drop us message</h3>
             <form class="md-form" @submit.prevent="onSubmit">
               <div class="md-form__row md-my-1">
                 <MdTextField
