@@ -5,7 +5,7 @@
     >
       <div class="md-row">
         <div
-          class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+          class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
         >
           <div
             class="md-mt-1 pm-work-font md-text-accent nt-tag-line cp-animate cp-animate--fade"

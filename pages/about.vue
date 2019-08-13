@@ -6,7 +6,7 @@
       >
         <div class="md-row">
           <div
-            class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <div
               class="md-mt-1 pm-work-font md-text-accent nt-tag-line cp-animate cp-animate--fade"
@@ -14,7 +14,7 @@
               WHO WE ARE?
             </div>
             <h2
-              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline5 md-typography-font-light md-oh"
             >
               <span class="cp-animate cp-animate--slide md-d-inline-block">
                 About us
@@ -41,7 +41,7 @@
           </div>
           <div class="md-col md-col--12 md-col--6-md">
             <div class="content md-mt-2 md-mt-0-md">
-              <div class="md-typography-text-justify">
+              <div class="md-typography-justify">
                 <p class="md-typography-subtitle1">Dear Traveller,</p>
                 <p class="md-typography-subtitle1">
                   Welcome. Plan My Holiday offers you bespoke vacations to the
@@ -92,9 +92,7 @@
         <div class="md-row">
           <div class="md-col">
             <div class="md-flex-column md-justify-content-center">
-              <h3
-                class="md-mb-2 md-typography-headline md-typography-text-center"
-              >
+              <h3 class="md-mb-2 md-typography-headline md-typography-center">
                 Why book with us
               </h3>
               <div
@@ -106,7 +104,7 @@
         </div>
         <template v-for="(item, index) in whyUsItems">
           <WhyUsCard
-            class="md-mt-4"
+            class="md-mt-4 md-row"
             :key="'feature-' + index"
             :index="index"
             :why-us="item"
@@ -118,12 +116,10 @@
       <div class="md-container md-container--box">
         <div class="md-row">
           <div
-            class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <div class="md-flex-column md-justify-content-center">
-              <h3
-                class="md-mb-2 md-typography-headline md-typography-text-center"
-              >
+              <h3 class="md-mb-2 md-typography-headline md-typography-center">
                 Pricing Guarantee
               </h3>
               <div
@@ -142,9 +138,7 @@
               money.
             </p>
             <div class="md-mt-4 md-flex-column md-justify-content-center">
-              <h3
-                class="md-mb-2 md-typography-headline md-typography-text-center"
-              >
+              <h3 class="md-mb-2 md-typography-headline md-typography-center">
                 Special Offers
               </h3>
               <div

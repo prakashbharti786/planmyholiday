@@ -2,7 +2,7 @@
   <section class="rx-section md-py-0">
     <div
       v-if="enableList"
-      v-swiper:mySwiper="swiperOptionBlog"
+      v-swiper:mySwiper="swiperOption"
       class="swiper-container cp-hero-slider"
     >
       <div class="swiper-wrapper">
@@ -25,7 +25,7 @@
           <div
             class="swiper-lazy cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
           >
-            <div class="md-d-flex md-flex-column md-typography-text-center">
+            <div class="md-d-flex md-flex-column md-typography-center">
               <h2
                 class="md-text-light md-typography-headline4"
                 v-html="item.title"
@@ -55,7 +55,7 @@
         class="cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
       >
         <div
-          class="md-flex-grow-1 md-d-flex md-flex-column md-typography-text-center"
+          class="md-flex-grow-1 md-d-flex md-flex-column md-typography-center"
         >
           <div
             style="transition-delay: 250ms; height: 48px"
@@ -82,7 +82,7 @@ export default {
   },
   data: () => ({
     assetsUrl: process.env.assetsUrl,
-    swiperOptionBlog: {
+    swiperOption: {
       lazy: true,
       slidesPerView: 1,
       spaceBetween: 0,

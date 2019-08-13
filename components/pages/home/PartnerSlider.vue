@@ -6,11 +6,11 @@
         class="swiper-container"
         style="margin-left: -16px;margin-right: -16px"
       >
-        <div class="swiper-wrapper md-px-2">
+        <div class="swiper-wrapper md-px-2 md-align-items-center">
           <div
             v-for="(item, index) in partnerList"
             :key="'partner' + index"
-            class="swiper-slide swiper-slide--rex"
+            class="swiper-slide swiper-slide--rex swiper-slide-partner"
           >
             <a :href="item.link" target="_blank" rel="noopener">
               <img
@@ -36,6 +36,11 @@
   margin-top: 16px;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 768px) {
+  .swiper-slide-partner {
+    width: 172px;
+  }
+}
 </style>
 
 <script>
@@ -60,9 +65,9 @@ export default {
       breakpoints: {
         // when window width is <= 480px
         768: {
-          slidesPerView: 1,
+          slidesPerView: 'auto',
           spaceBetween: 16,
-          autoplay: true
+          autoplay: false
         },
         // when window width is <= 640px
         959: {

@@ -4,10 +4,12 @@
       <TestimonialHeroSlider v-if="false" />
     </div>
     <div class="rx-section">
-      <div class="md-container md-container--box">
+      <div
+        class="md-container md-container--gutter md-container--gutter-24-md md-container--box"
+      >
         <div class="md-row">
           <div
-            class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <div class="md-mt-1 pm-work-font md-text-accent nt-tag-line">
               Thoughts &amp; Ideas
@@ -24,14 +26,22 @@
           </div>
         </div>
       </div>
-      <div v-if="enableList" class="md-container md-container--box">
-        <template v-for="(item, index) in testimonialList">
-          <TestimonialCard
+      <div
+        v-if="enableList"
+        class="md-container md-container--gutter md-container--gutter-24-md md-container--box"
+      >
+        <div class="md-row">
+          <div
+            class="md-col md-col--12"
             :key="'testimonial-' + index"
-            :testimonial="item"
-            class="swiper-slide swiper-slide--rex md-my-2 md-border why-us-slider-card"
-          />
-        </template>
+            v-for="(item, index) in testimonialList"
+          >
+            <TestimonialCard
+              :testimonial="item"
+              class="swiper-slide swiper-slide--rex md-mb-1 md-mb-2-sm md-border why-us-slider-card"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>

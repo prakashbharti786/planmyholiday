@@ -19,6 +19,13 @@
           class="md-top-app-bar__section cp-top-app-bar__section--start md-justify-content-start"
         >
           <MdIconButton
+            v-if="showBack"
+            class="md-top-app-bar__navigation-icon md-d-none-sm"
+            icon="arrow_back"
+            @click="goBack"
+          />
+          <MdIconButton
+            v-else=""
             class="md-top-app-bar__navigation-icon md-d-none-sm"
             icon="menu"
             @click="$emit('drawerToggle')"

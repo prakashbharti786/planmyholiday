@@ -10,9 +10,6 @@
       <section class="md-card__supporting-text">
         <div class="md-shimmer__item md-shimmer__item--paragraph"></div>
         <div class="md-shimmer__item md-shimmer__item--paragraph"></div>
-        <section class="md-pt-2">
-          <div class="md-button md-shimmer__item" style="width: 95px"></div>
-        </section>
       </section>
     </div>
   </div>

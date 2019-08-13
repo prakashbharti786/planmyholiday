@@ -4,9 +4,8 @@
       v-if="enableList && !isFetching"
       v-swiper:mySwiper="swiperOptionBlog"
       class="swiper-container"
-      style="margin-left: -16px;margin-right: -16px"
     >
-      <div class="swiper-wrapper md-px-2">
+      <div class="swiper-wrapper">
         <template v-for="(item, index) in itemList">
           <BlogCard
             :key="'blog-slide-' + index"
@@ -25,9 +24,8 @@
       v-if="isFetching || !enableList"
       v-swiper:mySwiper="swiperOptionBlog"
       class="swiper-container"
-      style="margin-left: -16px;margin-right: -16px"
     >
-      <div class="swiper-wrapper md-px-2 md-shimmer">
+      <div class="swiper-wrapper md-shimmer">
         <template v-for="i in 3">
           <BlogCardShimmer
             :key="'blog-shimmer-' + i"
@@ -69,8 +67,7 @@ export default {
         // when window width is <= 480px
         768: {
           slidesPerView: 1,
-          spaceBetween: 16,
-          autoplay: true
+          spaceBetween: 16
         },
         // when window width is <= 640px
         959: {

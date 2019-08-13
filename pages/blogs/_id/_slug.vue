@@ -10,15 +10,15 @@
       <div class="md-container md-container--box">
         <div class="md-row">
           <div
-            class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <h3
-              class="appearContainer cp-animate cp-animate--fade font-satisfy md-typography-text-center md-mb-2 md-mt-1 md-mt-0-md md-typography-headline5"
+              class="appearContainer cp-animate cp-animate--fade font-satisfy md-typography-center md-mb-2 md-mt-1 md-mt-0-md md-typography-headline5"
             >
               {{ blog.places }}, {{ getCountryNameByCode(blog['country']) }}
             </h3>
             <h2
-              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline5 md-typography-font-light md-oh"
             >
               <span class="cp-animate cp-animate--slide md-d-inline-block">
                 {{ blog.title }}
@@ -27,10 +27,8 @@
           </div>
         </div>
         <div class="md-row cp-animate cp-animate--fade">
-          <div class="md-col md-mb-4 md-col--12 md-typography-text-center">
-            <div
-              class="md-typography-text-justify md-typography-subtitle1 pm-blog"
-            >
+          <div class="md-col md-mb-4 md-col--12 md-typography-center">
+            <div class="md-typography-justify md-typography-subtitle1 pm-blog">
               <div v-html="blog.description"></div>
             </div>
             <div class="md-d-flex">
@@ -72,7 +70,7 @@
     </div>
     <div class="rx-section">
       <div class="md-container md-container--box">
-        <h3 class="md-typography-text-center md-typography-headline5">
+        <h3 class="md-typography-center md-typography-headline5">
           Other blogs
         </h3>
         <BlogSlider />

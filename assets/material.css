@@ -1449,60 +1449,204 @@ p {
   }
 }
 
-.md-typography-text-left {
+.md-typography-left {
   text-align: left;
 }
 
-.md-typography-text-right {
+.md-typography-right {
   text-align: right;
 }
 
-.md-typography-text-center {
+.md-typography-center {
   text-align: center;
 }
 
-.md-typography-text-justify {
+.md-typography-justify {
   text-align: justify;
 }
 
-.md-typography-text-nowrap {
+@media (min-width: 640px) {
+  .md-typography-left-sm {
+    text-align: left;
+  }
+  .md-typography-right-sm {
+    text-align: right;
+  }
+  .md-typography-center-sm {
+    text-align: center;
+  }
+  .md-typography-justify-sm {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 960px) {
+  .md-typography-left-md {
+    text-align: left;
+  }
+  .md-typography-right-md {
+    text-align: right;
+  }
+  .md-typography-center-md {
+    text-align: center;
+  }
+  .md-typography-justify-md {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1280px) {
+  .md-typography-left-lg {
+    text-align: left;
+  }
+  .md-typography-right-lg {
+    text-align: right;
+  }
+  .md-typography-center-lg {
+    text-align: center;
+  }
+  .md-typography-justify-lg {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1440px) {
+  .md-typography-left-xl {
+    text-align: left;
+  }
+  .md-typography-right-xl {
+    text-align: right;
+  }
+  .md-typography-center-xl {
+    text-align: center;
+  }
+  .md-typography-justify-xl {
+    text-align: justify;
+  }
+}
+
+.md-typography-thin {
+  font-weight: 200;
+}
+
+.md-typography-light {
+  font-weight: 300;
+}
+
+.md-typography-regular {
+  font-weight: 400;
+}
+
+.md-typography-medium {
+  font-weight: 500;
+}
+
+.md-typography-bold {
+  font-weight: 700;
+}
+
+.md-typography-black {
+  font-weight: 900;
+}
+
+@media (min-width: 640px) {
+  .md-typography-thin-sm {
+    font-weight: 200;
+  }
+  .md-typography-light-sm {
+    font-weight: 300;
+  }
+  .md-typography-regular-sm {
+    font-weight: 400;
+  }
+  .md-typography-medium-sm {
+    font-weight: 500;
+  }
+  .md-typography-bold-sm {
+    font-weight: 700;
+  }
+  .md-typography-black-sm {
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 960px) {
+  .md-typography-thin-md {
+    font-weight: 200;
+  }
+  .md-typography-light-md {
+    font-weight: 300;
+  }
+  .md-typography-regular-md {
+    font-weight: 400;
+  }
+  .md-typography-medium-md {
+    font-weight: 500;
+  }
+  .md-typography-bold-md {
+    font-weight: 700;
+  }
+  .md-typography-black-md {
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 1280px) {
+  .md-typography-thin-lg {
+    font-weight: 200;
+  }
+  .md-typography-light-lg {
+    font-weight: 300;
+  }
+  .md-typography-regular-lg {
+    font-weight: 400;
+  }
+  .md-typography-medium-lg {
+    font-weight: 500;
+  }
+  .md-typography-bold-lg {
+    font-weight: 700;
+  }
+  .md-typography-black-lg {
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 1440px) {
+  .md-typography-thin-xl {
+    font-weight: 200;
+  }
+  .md-typography-light-xl {
+    font-weight: 300;
+  }
+  .md-typography-regular-xl {
+    font-weight: 400;
+  }
+  .md-typography-medium-xl {
+    font-weight: 500;
+  }
+  .md-typography-bold-xl {
+    font-weight: 700;
+  }
+  .md-typography-black-xl {
+    font-weight: 900;
+  }
+}
+
+.md-typography-nowrap {
   white-space: nowrap;
 }
 
-.md-typography-text-lowercase {
+.md-typography-lowercase {
   text-transform: lowercase;
 }
 
-.md-typography-text-uppercase {
+.md-typography-uppercase {
   text-transform: uppercase;
 }
 
-.md-typography-text-capitalize {
+.md-typography-capitalize {
   text-transform: capitalize;
-}
-
-.md-typography-font-thin {
-  font-weight: 200 !important;
-}
-
-.md-typography-font-light {
-  font-weight: 300 !important;
-}
-
-.md-typography-font-regular {
-  font-weight: 400 !important;
-}
-
-.md-typography-font-medium {
-  font-weight: 500 !important;
-}
-
-.md-typography-font-bold {
-  font-weight: 700 !important;
-}
-
-.md-typography-font-black {
-  font-weight: 900 !important;
 }
 
 :root {

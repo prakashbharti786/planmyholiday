@@ -5,10 +5,10 @@
       <div class="md-container md-container--box">
         <div class="md-row">
           <div
-            class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <h3
-              class="appearContainer font-satisfy md-typography-text-center md-mb-2 md-mt-1 md-mt-0-md md-typography-headline5"
+              class="appearContainer font-satisfy md-typography-center md-mb-2 md-mt-1 md-mt-0-md md-typography-headline5"
             >
               {{ getCountryNameByCode(testimonial['country']) }}
             </h3>
@@ -20,8 +20,8 @@
           </div>
         </div>
         <div class="md-row">
-          <div class="md-mb-4 md-col md-col--12 md-typography-text-center">
-            <div class="md-typography-text-justify md-typography-subtitle1">
+          <div class="md-mb-4 md-col md-col--12 md-typography-center">
+            <div class="md-typography-justify md-typography-subtitle1">
               <i class="material-icons cp-testimonial-slider__icon"
                 >format_quote</i
               >
@@ -39,7 +39,7 @@
     </div>
     <div class="rx-section">
       <div class="md-container md-container--box">
-        <h3 class="md-typography-text-center md-typography-headline5">
+        <h3 class="md-typography-center md-typography-headline5">
           Other testimonials
         </h3>
         <Testimonial />

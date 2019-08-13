@@ -5,7 +5,7 @@
     >
       <div class="md-row">
         <div
-          class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+          class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
         >
           <div
             class="md-mt-1 pm-work-font md-text-accent cp-animate cp-animate--fade nt-tag-line"
@@ -13,7 +13,7 @@
             Get in touch
           </div>
           <h2
-            class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
+            class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline5 md-typography-font-light md-oh"
           >
             <span class="cp-animate cp-animate--slide md-d-inline-block">
               Contact us

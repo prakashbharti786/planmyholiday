@@ -12,9 +12,9 @@
         ></div>
         <router-link to="/" class="cp-click-area"></router-link>
       </div>
-      <section class="md-card__primary">
+      <section class="md-card__primary md-py-1 md-py-2-sm">
         <h3
-          class="font-satisfy md-typography-text-center md-card__title-text md-mb-0"
+          class="font-satisfy md-typography-center md-card__title-text md-typography-subtitle1-sm md-typography-subtitle2 md-mb-0"
         >
           {{ item.name }}
         </h3>

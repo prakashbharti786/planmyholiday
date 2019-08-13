@@ -7,7 +7,7 @@
       >
         <div class="md-row">
           <div
-            class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <div
               class="md-mt-1 cp-animate cp-animate--fade pm-work-font md-text-accent nt-tag-line"
@@ -15,7 +15,7 @@
               Many reasons to choose us
             </div>
             <h2
-              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline5 md-typography-font-light md-oh"
             >
               <span class="cp-animate cp-animate--slide md-d-inline-block">
                 Why us
@@ -24,7 +24,9 @@
           </div>
         </div>
       </div>
-      <div class="md-container md-container--box">
+      <div
+        class="md-container md-container--box md-container--gutter md-container--gutter-24-md"
+      >
         <WhyUs />
       </div>
       <div class="md-d-flex md-mt-3 md-justify-content-center">
@@ -39,7 +41,7 @@
       >
         <div class="md-row">
           <div
-            class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <div
               class="md-mt-1 cp-animate cp-animate--fade pm-work-font md-text-accent nt-tag-line"
@@ -47,7 +49,7 @@
               Discover travel that stirs your soul
             </div>
             <h2
-              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline5 md-typography-font-light md-oh"
             >
               <span class="cp-animate cp-animate--slide md-d-inline-block">
                 Discover your experience
@@ -66,10 +68,12 @@
       </div>
     </section>
     <div class="md-bg-white rx-section md-my-1">
-      <div class="md-container md-container--box">
+      <div
+        class="md-container md-container--box md-container--gutter md-container--gutter-24-md"
+      >
         <div class="md-row">
           <div
-            class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <div
               class="cp-animate cp-animate--fade md-mt-1 pm-work-font md-text-accent nt-tag-line"
@@ -77,7 +81,7 @@
               Thoughts &amp; Ideas
             </div>
             <h2
-              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline5 md-typography-font-light md-oh"
             >
               <span class="cp-animate cp-animate--slide md-d-inline-block">
                 Our Blog
@@ -100,10 +104,12 @@
       </div>
     </div>
     <div class="rx-section md-my-1">
-      <div class="md-container md-container--box">
+      <div
+        class="md-container md-container--box md-container--gutter md-container--gutter-24-md"
+      >
         <div class="md-row">
           <div
-            class="md-col md-mb-3 md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-mb-2 md-mb-3-sm md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <div
               class="md-mt-1 cp-animate cp-animate--fade pm-work-font md-text-accent nt-tag-line"
@@ -111,7 +117,7 @@
               Exclusive Member
             </div>
             <h2
-              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline5 md-typography-font-light md-oh"
             >
               <span class="cp-animate cp-animate--slide md-d-inline-block">
                 Preferred Partners
@@ -120,9 +126,12 @@
             <p class="pm-work-font md-typography-subtitle1 md-oh">
               <span class="cp-animate cp-animate--slide md-d-inline-block">
                 We are proud to be part of the most prestigious global forums
-                for premium travel service providers around the world. This
-                ensures that our guests always get the best in class services
-                and extra privileges when they book these brands through us.
+                for premium travel service providers around the world.
+                <span class="md-d-none md-d-inline-sm">
+                  This ensures that our guests always get the best in class
+                  services and extra privileges when they book these brands
+                  through us.
+                </span>
               </span>
             </p>
           </div>
@@ -143,7 +152,7 @@
       >
         <div class="md-row">
           <div
-            class="md-col md-col--8-md md-col--offset-2-md md-typography-text-center"
+            class="md-col md-col--8-md md-col--offset-2-md md-typography-center"
           >
             <div
               class="md-mt-1 pm-work-font md-text-accent nt-tag-line cp-animate cp-animate--fade"
@@ -151,7 +160,7 @@
               Many reasons to choose us
             </div>
             <h2
-              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline4 md-typography-font-light md-oh"
+              class="md-mb-2 pm-work-font md-typography-headline3-md md-typography-headline5 md-typography-font-light md-oh"
             >
               <span class="cp-animate cp-animate--slide md-d-inline-block">
                 What others say
@@ -160,7 +169,9 @@
           </div>
         </div>
       </div>
-      <div class="md-container md-container--box">
+      <div
+        class="md-container md-container--box md-container--gutter md-container--gutter-24-md"
+      >
         <Testimonial class="cp-animate cp-animate--fade" />
         <div
           class="md-mt-3 cp-animate cp-animate--fade md-d-flex md-justify-content-center"

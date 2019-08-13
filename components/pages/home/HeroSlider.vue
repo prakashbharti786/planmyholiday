@@ -25,9 +25,9 @@
           <div
             class="swiper-lazy cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
           >
-            <div class="md-d-flex md-flex-column md-typography-text-center">
+            <div class="md-d-flex md-flex-column md-typography-center">
               <h2
-                class="md-text-light md-typography-headline3-md md-typography-headline4 md-oh"
+                class="md-text-light md-typography-headline3-md md-typography-headline5 md-oh"
               >
                 <span
                   class="cp-animate cp-animate--slide md-d-inline-block"
@@ -35,7 +35,7 @@
                 ></span>
               </h2>
               <p
-                class="md-text-light md-typography-headline5-md md-typography-subtitle1 md-oh"
+                class="md-text-light md-typography-headline5-md md-typography-body1 md-oh"
               >
                 <span
                   class="cp-animate cp-animate--slide md-d-inline-block"
@@ -63,7 +63,7 @@
         class="cp-hero-slider__content md-d-flex md-align-items-center md-justify-content-center"
       >
         <div
-          class="md-flex-grow-1 md-d-flex md-flex-column md-typography-text-center"
+          class="md-flex-grow-1 md-d-flex md-flex-column md-typography-center"
         >
           <div
             style="transition-delay: 250ms; height: 48px"

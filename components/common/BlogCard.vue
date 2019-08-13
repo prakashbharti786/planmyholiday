@@ -23,10 +23,11 @@
           class="cp-click-area"
         ></router-link>
       </div>
-      <section class="md-card__primary">
+      <section
+        class="md-card__primary md-typography-left-sm md-typography-center"
+      >
         <h3
-          style="width: 300px"
-          class="font-satisfy md-typography-text-center md-card__title-text md-mb-0"
+          class="font-satisfy md-typography-center md-card__title-text md-mb-0"
         >
           {{ country[parseInt(blog.nid)] }}
         </h3>
@@ -37,20 +38,10 @@
           {{ blog.node_title }}
         </div>
       </section>
-      <section class="md-card__supporting-text">
+      <section class="md-card__supporting-text md-d-none md-d-flex-sm">
         <span class="">
           {{ summery[parseInt(blog.nid)] }}
         </span>
-        <section class="md-pt-2">
-          <router-link
-            :to="'/blogs' + '/' + blog.nid + '/' + blog.alias.substring(5)"
-            class="md-button md-button--outlined md-button--compact md-card__action"
-          >
-            <span class="md-button__label">
-              Read more
-            </span>
-          </router-link>
-        </section>
       </section>
     </div>
   </div>
