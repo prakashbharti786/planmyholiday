@@ -37,9 +37,9 @@
 }
 
 :root {
-  --color-primary: 19, 90, 247;
+  --color-primary: 0, 131, 143;
   --color-primary-contrast: 255, 255, 255;
-  --color-primary-light: 119, 141, 225;
+  --color-primary-light: 255, 215, 64;
   --color-primary-light-contrast: 0, 0, 0;
   --color-primary-dark: 0, 55, 203;
   --color-primary-dark-contrast: 255, 255, 255;

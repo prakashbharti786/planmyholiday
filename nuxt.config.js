@@ -56,7 +56,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#00bcd4' },
+  loading: { color: '#00838f' },
 
   /*
    ** Plugins to load before mounting the App
@@ -146,7 +146,7 @@ module.exports = {
       'Plan My Holiday offers you bespoke vacations to the world’s most exclusive hotels and exotic destinations. ' +
       'We are constantly exploring new destinations, attending travel industry events and upgrading our destination knowledge through various webinars and travel modules. ' +
       "We have built a strong network of reliable and experienced travel partners to offer you nothing but the globe's finest hotels, luxury villas and cruises for that unforgettable journey.",
-    theme_color: '#00bcd4',
+    theme_color: '#00838f',
     lang: 'en',
     ogTitle: 'Planmyholiday - Free and convenient way to eFile your income tax',
     ogHost: process.env.ASSETS_URL,
@@ -170,7 +170,7 @@ module.exports = {
       'Planmyholiday - Free and convenient way to eFile your income tax',
     lang: 'en',
     crossorigin: 'use-credentials',
-    theme_color: '#00bcd4'
+    theme_color: '#00838f'
   },
 
   /* CSS file in the project */
