@@ -97,17 +97,27 @@ export default {
     }
   },
   mounted() {
+    this.$nextTick(() => {
+      document.getElementById('cp-navbar').classList.add('header-light')
+    })
     if (!(this.testimonialList && this.testimonialList.length)) {
       this.fetchTestimonials()
     } else {
       this.isFetching = false
     }
   },
+  beforeDestroy() {
+    document.getElementById('cp-navbar').classList.remove('header-light')
+  },
   methods: {
     async fetchTestimonials() {
       this.isFetching = true
       try {
         await this.$store.dispatch('testimonials/fetchTestimonials')
+        this.$store.commit('core/setData', {
+          name: 'topAppBarTitle',
+          data: this.testimonial.node_title
+        })
       } catch (e) {
         // eslint-disable-next-line no-console
         console.log(e)

@@ -104,7 +104,7 @@
         </div>
         <template v-for="(item, index) in whyUsItems">
           <WhyUsCard
-            class="md-mt-4 md-row"
+            class="md-mt-4"
             :key="'feature-' + index"
             :index="index"
             :why-us="item"

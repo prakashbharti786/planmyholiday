@@ -72,6 +72,10 @@ export default {
     } else {
       this.isFetching = false
     }
+    this.$store.commit('core/setData', {
+      name: 'topAppBarTitle',
+      data: 'Our blog'
+    })
   },
   methods: {
     async fetchBlogs() {

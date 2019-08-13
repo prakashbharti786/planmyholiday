@@ -204,11 +204,21 @@ export default {
     }
   },
   mounted() {
+    this.$nextTick(() => {
+      document.getElementById('cp-navbar').classList.add('header-light')
+    })
     if (!(this.testimonialList && this.testimonialList.length)) {
       this.fetchTestimonials()
     } else {
       this.isFetching = false
     }
+    this.$store.commit('core/setData', {
+      name: 'topAppBarTitle',
+      data: this.blog.title
+    })
+  },
+  beforeDestroy() {
+    document.getElementById('cp-navbar').classList.remove('header-light')
   },
   methods: {
     async fetchTestimonials() {

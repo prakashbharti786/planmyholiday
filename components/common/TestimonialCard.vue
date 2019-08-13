@@ -29,6 +29,16 @@
             : ''
         }}
       </section>
+      <router-link
+        :to="
+          '/testimonials' +
+            '/' +
+            testimonial.nid +
+            testimonial.alias.substring(11)
+        "
+        class="cp-click-area"
+        style="z-index: 2"
+      ></router-link>
     </div>
     <div
       class="md-row md-align-items-center-md cp-bg-grey md-d-none md-d-flex-sm"
@@ -62,7 +72,7 @@
               ></div>
               <router-link
                 :to="
-                  'testimonials' +
+                  '/testimonials' +
                     '/' +
                     testimonial.nid +
                     testimonial.alias.substring(11)
@@ -93,7 +103,7 @@
             <span v-html="testimonial.description"></span>
             <router-link
               :to="
-                'testimonials' +
+                '/testimonials' +
                   '/' +
                   testimonial.nid +
                   testimonial.alias.substring(11)

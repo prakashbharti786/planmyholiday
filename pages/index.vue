@@ -206,7 +206,10 @@ export default {
     this.$nextTick(() => {
       document.getElementById('cp-navbar').classList.add('header-light')
     })
-    this.$store.commit('core/setData', { name: 'topAppBarTitle', data: '' })
+    this.$store.commit('core/setData', {
+      name: 'topAppBarTitle',
+      data: 'Planmyholiday'
+    })
   },
   beforeDestroy() {
     document.getElementById('cp-navbar').classList.remove('header-light')

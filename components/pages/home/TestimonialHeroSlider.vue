@@ -149,12 +149,12 @@ export default {
         this.$store.commit('core/setObjData', {
           name: 'scroll',
           key: 'startScroll',
-          data: 480
+          data: 420
         })
         this.$store.commit('core/setObjData', {
           name: 'scroll',
           key: 'endScroll',
-          data: 480
+          data: 420
         })
       } catch (e) {
         // eslint-disable-next-line no-console

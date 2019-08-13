@@ -282,12 +282,33 @@ process
 .cp-hero-slider-shimmer {
   height: 647px;
 }
+.md-icon-button__icon.material-icons {
+  width: 24px;
+}
 @media (max-width: 599px) {
+  .md-top-app-bar__navigation-icon {
+    margin-left: -16px;
+  }
   .cp-hero-slider__img {
     height: 420px;
   }
   .cp-hero-slider-shimmer {
     height: 420px;
+  }
+  .cp-card__media--16-9 {
+    position: relative;
+  }
+  .cp-card__media--16-9::before {
+    margin-top: 56.25%;
+    display: block;
+    content: '';
+  }
+  .cp-content-image {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
   }
 }
 .cp-hero-slider__content,
@@ -337,6 +358,9 @@ process
     rgba(0, 0, 0, 0.2) 0%,
     rgba(0, 0, 0, 0.3) 100%
   );
+}
+.hide-img img {
+  display: none;
 }
 </style>
 <script>

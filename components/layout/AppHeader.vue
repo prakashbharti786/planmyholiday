@@ -39,7 +39,10 @@
               style="height: 40px;"
             />
           </nuxt-link>
-          <div v-if="topAppBarTitle" class="md-top-app-bar__title">
+          <div
+            v-if="topAppBarTitle"
+            class="md-top-app-bar__title md-pl-0 md-pl-2-sm"
+          >
             {{ topAppBarTitle }}
           </div>
         </div>
@@ -69,6 +72,12 @@
               :un-elevated="true"
               :raised="true"
               @click="$router.push('/auth/signup')"
+            />
+          </div>
+          <div class="md-d-inline-block md-d-none-sm">
+            <MdIconButton
+              style="margin-right: -28px; color: inherit;"
+              icon="more_vertical"
             />
           </div>
         </div>
@@ -116,19 +125,31 @@ body.has-fixed-header {
 .md-top-app-bar.header-top .md-top-app-bar__title {
   opacity: 1;
 }
-@media screen and (min-width: 768px) {
-  .header-background {
-    background-color: #fff;
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.13);
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
+.header-background {
+  background-color: #fff;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.13);
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 599px) {
+  .md-top-app-bar .header-background {
+    transform: none;
+  }
+  .md-top-app-bar .header-background {
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+  }
+  .md-top-app-bar.header-top .header-background {
+    opacity: 1;
   }
 }
+
 .header-light.md-top-app-bar {
   color: var(--color-app-text);
 }

@@ -39,11 +39,11 @@
 :root {
   --color-primary: 0, 131, 143;
   --color-primary-contrast: 255, 255, 255;
-  --color-primary-light: 255, 215, 64;
+  --color-primary-light: 119, 141, 225;
   --color-primary-light-contrast: 0, 0, 0;
   --color-primary-dark: 0, 55, 203;
   --color-primary-dark-contrast: 255, 255, 255;
-  --color-accent: 0, 210, 128;
+  --color-accent: 255, 196, 0;
   --color-accent-contrast: 255, 255, 255;
   --color-accent-light: 144, 243, 200;
   --color-accent-light-contrast: 0, 0, 0;
