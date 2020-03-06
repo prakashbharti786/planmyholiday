@@ -186,12 +186,12 @@
 </template>
 
 <script>
-import PartnerSlider from '../components/pages/home/PartnerSlider'
-import HeroSlider from '../components/pages/home/HeroSlider'
 import WhyUs from '@/components/pages/home/WhyUs'
 import BlogSlider from '@/components/pages/home/BlogsSlider'
 import Testimonial from '@/components/pages/home/Testimonial'
 import ExperienceBlock from '@/components/pages/home/ExperienceBlock'
+import PartnerSlider from '@/components/pages/home/PartnerSlider'
+import HeroSlider from '@/components/pages/home/HeroSlider'
 
 export default {
   components: {

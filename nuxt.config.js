@@ -2,6 +2,8 @@ require('dotenv').config()
 module.exports = {
   mode: 'universal',
 
+  buildDir: 'dist',
+
   /*
    ** Headers of the page
    */
@@ -66,8 +68,7 @@ module.exports = {
     '~plugins/vue-material.js',
     '~/plugins/axios',
     { src: '~/plugins/vuebar.js', ssr: false },
-    { src: '~/plugins/swiper.js', ssr: false },
-    { src: '~/plugins/sw.js', ssr: false }
+    { src: '~/plugins/swiper.js', ssr: false }
   ],
 
   /*
@@ -121,9 +122,7 @@ module.exports = {
     adminUrl: process.env.ADMIN_URL,
     apiUrl: process.env.API_URL,
     domain: process.env.DOMAIN,
-    assistantUrl: process.env.ASSISTANT_URL,
-    isLive: process.env.IS_LIVE,
-    payuMoneyKey: process.env.PAYU_MONEY_KEY
+    isLive: process.env.IS_LIVE
   },
 
   /*
@@ -174,7 +173,12 @@ module.exports = {
   },
 
   /* CSS file in the project */
-  css: ['@/assets/material.css', '@/assets/main.css', '@/assets/animation.css'],
+  css: [
+    '@/assets/style/material.scss',
+    '@/assets/style/style.scss',
+    '@/assets/main.css',
+    '@/assets/animation.css'
+  ],
 
   router: {
     middleware: ['visits']

@@ -15,9 +15,9 @@
         </template>
       </div>
       <div
+        slot="pagination"
         style="bottom: -2px"
         class="swiper-pagination md-d-none-sm"
-        slot="pagination"
       ></div>
     </div>
     <div
@@ -46,8 +46,8 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import BlogCard from '../../common/BlogCard'
 import BlogCardShimmer from '@/components/common/BlogCardShimmer'
+import BlogCard from '../../common/BlogCard'
 
 export default {
   components: { BlogCardShimmer, BlogCard },

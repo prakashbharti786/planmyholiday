@@ -135,11 +135,6 @@ process
   text-transform: uppercase;
   font-size: 12px;
 }
-:root {
-  --font-family-base: 'Work Sans', sans-serif;
-  --button-font-family: 'Work Sans', sans-serif;
-  --button-border-radius: 2px;
-}
 .pm-work-font {
   font-family: 'Work Sans', sans-serif;
 }
@@ -163,7 +158,6 @@ process
 }
 .pmh-blog__posts > .md-card {
   transition: all 0.3s;
-  --card-border-radius: 0;
 }
 
 .pmh-blog__posts > .md-card:hover {
