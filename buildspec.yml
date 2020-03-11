@@ -15,7 +15,6 @@ phases:
     commands:
       - echo Removing the unused files for deploy...
       - rm -rf node_modules .git  components layouts pages store
-      - npm install --production
 artifacts:
   files:
     - appspec.yml
@@ -27,6 +26,5 @@ artifacts:
     - server/*
     - assets/**/*
     - dist/**/*
-    - node_modules/**/*
     - plugins/**/*
     - static/**/*
