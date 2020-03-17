@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 stopApp() {
   /usr/bin/forever stop pmhApp
 }
