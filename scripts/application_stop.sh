@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/bin/forever stop pmhApp
+/usr/bin/forever stop pmhApp || true
