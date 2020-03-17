@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/bin/pm2 stop pmh_app
+/usr/bin/forever stop pmhApp
