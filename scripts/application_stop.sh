@@ -1,3 +1,7 @@
 #!/bin/bash
+set -u
 set -e
-/usr/bin/forever stop pmhApp || true
+stop() {
+  /usr/bin/forever stop pmhApp
+}
+[[ $(stop 2>&1) =~ "Forever cannot find" ]]
